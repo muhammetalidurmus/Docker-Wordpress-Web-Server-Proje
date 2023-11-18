@@ -12,10 +12,6 @@ services:
 
       # Konteyneri başlatmadan önce bağlı olduğu konteynerleri belirtir.
   # Eğer bonus kısmını yapmayacaksanız bu kısmı yazmayın.
-      depends_on:
-        - adminer
-        - redis
-        - hugo
 
       # Dinlenilecek : Yönlendirilecek portlar
       ports:
