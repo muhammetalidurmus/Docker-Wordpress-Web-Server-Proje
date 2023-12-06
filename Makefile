@@ -1,8 +1,8 @@
 DC := docker-compose -f ./srcs/docker-compose.yml
-
+USER:= mdurmus
 all:
-	@mkdir -p /home/data/wordpress
-	@mkdir -p /home/data/mysql
+	@mkdir -p /home/${USER}/data/wordpress
+	@mkdir -p /home/${USER}/data/mysql
 	@$(DC) up -d --build
 
 down:
